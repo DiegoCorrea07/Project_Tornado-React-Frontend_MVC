@@ -1,0 +1,87 @@
+
+.grade-filter-form-container {
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 25px;
+  color: #333;
+  text-align: center;
+}
+
+.grade-filter-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas para los campos */
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+select,
+input[type="date"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg fill="%23333" viewBox="0 0 24 24" width="18" height="18"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 1em;
+}
+
+select:focus,
+input[type="date"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.filter-button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  grid-column: 1 / 3; /* Ocupa ambas columnas */
+  margin-top: 20px;
+}
+
+.filter-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para pantallas más pequeñas (opcional) */
+@media (max-width: 500px) {
+  .grade-filter-form {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+  }
+
+  .filter-button {
+    grid-column: 1; /* Ocupa la única columna */
+  }
+}
