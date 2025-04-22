@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:8888";
+const API_URL = "https://minecore-grades-web.onrender.com";
 
 // Estudiantes
 export async function getStudents() {
