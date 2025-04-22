@@ -1,0 +1,47 @@
+
+.grade-list-container {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+h3 {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.grade-list {
+  list-style: none;
+  padding: 0;
+}
+
+.grade-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.grade-item:last-child {
+  border-bottom: none;
+}
+
+.grade-item span {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.grade-item span:first-child {
+  font-weight: bold;
+}
+
+.empty-message {
+  color: #777;
+  font-style: italic;
+}
